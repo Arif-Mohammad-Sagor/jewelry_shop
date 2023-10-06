@@ -1,16 +1,15 @@
-import './App.css'
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-
-
   return (
     <>
-
-      <h1 className='text-red-500'>Welcome to Our Shop</h1>
-
-
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
