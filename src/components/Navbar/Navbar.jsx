@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import './navbar.moudle.css';
+import { userContext } from '../providers/ContextProvider';
 
 const Navbar = () => {
+  const user = useContext(userContext);
+  console.log(user);
   return (
-    <div>Navbar</div>
+    <div className=''>Navbar</div>
   )
 }
 
